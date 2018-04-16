@@ -36,12 +36,12 @@ def parameters_generator(instrument, smaFirst, smaLast):
         yield(instrument, sma)
 
 
-class FailingStrategy(strategy.BacktestingStrategy):
-    def __init__(self, barFeed, instrument, smaPeriod):
-        super(FailingStrategy, self).__init__(barFeed)
-
-    def onBars(self, bars):
-        raise Exception("oh no!")
+#class FailingStrategy(strategy.BacktestingStrategy):
+#    def __init__(self, barFeed, instrument, smaPeriod):
+#        super(FailingStrategy, self).__init__(barFeed)
+#
+#    def onBars(self, bars):
+#        raise Exception("oh no!")
 
 
 class OptimizerTestCase(common.TestCase):
